@@ -169,6 +169,20 @@ cpn.add_dataset(
             n_files=103,
             n_events=95286000,
         ),
+        mtop_up=DatasetInfo(
+            keys=[
+                "/TTToHadronic_mtop173p5_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=79,
+            n_events=89579000,
+        ),
+        mtop_down=DatasetInfo(
+            keys=[
+                "/TTToHadronic_mtop171p5_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=108,
+            n_events=96894000,
+        ),
     ),
 )
 
