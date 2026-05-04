@@ -855,3 +855,30 @@ cpn.add_dataset(
     n_files=34,
     n_events=11696999,
 )
+
+cpn.add_dataset(
+    name="tt_dl_powheg_17",
+    id=900001,
+    processes=[procs.tt_dl],
+    keys=["user_tt_dl_powheg_17"],
+    n_files=421,
+    n_events=106724000,
+)
+
+cpn.add_dataset(
+    name="tt_sl_powheg_17",
+    id=900002,
+    processes=[procs.tt_sl],
+    keys=["user_tt_sl_powheg_17"],
+    n_files=1407,
+    n_events=355054000 ,
+)
+
+cpn.add_dataset(
+    name="tt_fh_powheg_17",
+    id=900003,
+    processes=[procs.tt_fh],
+    keys=["user_tt_fh_powheg_17"],
+    n_files=987,
+    n_events=235215999,
+)
