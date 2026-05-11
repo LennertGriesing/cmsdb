@@ -20,11 +20,14 @@ cpn.add_dataset(
     processes=[procs.tt_sl],
     info=dict(
         nominal=DatasetInfo(
-            keys=[
-                "/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",  # noqa
-            ],
-            n_files=297,
-            n_events=346052000,
+            keys=["user_tt_sl_powheg_17"],
+            n_files=1407,
+            n_events=355054000,
+            aux={
+                "lfn_source": "pnfs",
+                "pnfs_dataset": "tt_sl_powheg_17",
+                "replace_nominal": True,
+            },
         ),
         tune_up=DatasetInfo(
             keys=[
@@ -165,11 +168,14 @@ cpn.add_dataset(
     processes=[procs.tt_dl],
     info=dict(
         nominal=DatasetInfo(
-            keys=[
-                "/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",  # noqa
-            ],
-            n_files=99,
+            keys=["user_tt_dl_powheg_17"],
+            n_files=421,
             n_events=106724000,
+            aux={
+                "lfn_source": "pnfs",
+                "pnfs_dataset": "tt_dl_powheg_17",
+                "replace_nominal": True,
+            },
         ),
         tune_up=DatasetInfo(
             keys=[
@@ -310,11 +316,14 @@ cpn.add_dataset(
     processes=[procs.tt_fh],
     info=dict(
         nominal=DatasetInfo(
-            keys=[
-                "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",  # noqa
-            ],
-            n_files=199,
-            n_events=232999999,
+            keys=["user_tt_fh_powheg_17"],
+            n_files=987,
+            n_events=235215999,
+            aux={
+                "lfn_source": "pnfs",
+                "pnfs_dataset": "tt_fh_powheg_17",
+                "replace_nominal": True,
+            },
         ),
         tune_up=DatasetInfo(
             keys=[
