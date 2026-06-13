@@ -167,7 +167,7 @@ cpn.add_dataset(
     info=dict(
         nominal=DatasetInfo(
             keys=["user_tt_dl_powheg_18"],
-            n_files=100,
+            n_files=98,
             n_events=145674000,
             aux={
                 "lfn_source": "pnfs",
