@@ -25,7 +25,9 @@ cpn.add_dataset(
             n_events=355054000,
             aux={
                 "lfn_source": "pnfs",
+                "pnfs_version": "v9_v2",
                 "pnfs_dataset": "tt_sl_powheg_17",
+                "year": 2017,
                 "replace_nominal": True,
             },
         ),
@@ -173,7 +175,9 @@ cpn.add_dataset(
             n_events=106724000,
             aux={
                 "lfn_source": "pnfs",
+                "pnfs_version": "v9_v2",
                 "pnfs_dataset": "tt_dl_powheg_17",
+                "year": 2017,
                 "replace_nominal": True,
             },
         ),
@@ -321,7 +325,9 @@ cpn.add_dataset(
             n_events=235215999,
             aux={
                 "lfn_source": "pnfs",
+                "pnfs_version": "v9_v2",
                 "pnfs_dataset": "tt_fh_powheg_17",
+                "year": 2017,
                 "replace_nominal": True,
             },
         ),
