@@ -21,8 +21,8 @@ cpn.add_dataset(
     info=dict(
         nominal=DatasetInfo(
             keys=["user_tt_sl_powheg_18"],
-            n_files=99, # 100
-            n_events=473184000, # 477062000
+            n_files=100,
+            n_events=472460000,
             aux={
                 "lfn_source": "pnfs",
                 "pnfs_version": "v9_v3merged",
@@ -315,7 +315,7 @@ cpn.add_dataset(
         nominal=DatasetInfo(
             keys=["user_tt_fh_powheg_18"],
             n_files=100,
-            n_events=339414000,
+            n_events=338654000,
             aux={
                 "lfn_source": "pnfs",
                 "pnfs_version": "v9_v3merged",
