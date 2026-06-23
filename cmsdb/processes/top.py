@@ -62,6 +62,16 @@ tt = Process(
             "mtop": (25.4, 24.6),
         }),
     },
+    aux={
+        "mtop3_up": {13: Number(768.815)},
+        "mtop3_down": {13: Number(905.621)},
+
+        "mtop1_up": {13: Number(811.521)},
+        "mtop1_down": {13: Number(857.049)},
+
+        "mtop6_up": {13: Number(709.641)},
+        "mtop6_down": {13: Number(984.701)},
+    }
 )
 
 tt_sl = tt.add_process(
@@ -87,6 +97,12 @@ tt_fh = tt.add_process(
     color=(255, 153, 0),
     xsecs=multiply_xsecs(tt, const.br_ww.fh),
 )
+
+
+for child in (tt_sl, tt_dl, tt_fh):
+    factor = {ecm: child.get_xsec(ecm) / tt.get_xsec(ecm) for ecm in tt.xsecs}
+    for k, a in (tt.aux or {}).items():
+        child.set_aux(k, {ecm: a[ecm] * factor[ecm] for ecm in a if ecm in factor})
 
 
 #
