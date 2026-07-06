@@ -66,7 +66,7 @@ cpn.add_dataset(
         "/JetHT/Run2018D-UL2018_MiniAODv2_NanoAODv9-v2/NANOAOD",
     ],
     n_files=232,
-    n_events=14324486,
+    n_events=356976276,
     aux={
         "era": "D",
     },
