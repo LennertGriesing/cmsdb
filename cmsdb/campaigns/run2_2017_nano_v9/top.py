@@ -21,11 +21,11 @@ cpn.add_dataset(
     info=dict(
         nominal=DatasetInfo(
             keys=["user_tt_sl_powheg_17"],
-            n_files=1407,
-            n_events=355054000,
+            n_files=100,
+            n_events=355332000,
             aux={
                 "lfn_source": "pnfs",
-                "pnfs_version": "v9_v2",
+                "pnfs_version": "v9_v3merged",
                 "pnfs_dataset": "tt_sl_powheg_17",
                 "year": 2017,
                 "replace_nominal": True,
@@ -171,11 +171,11 @@ cpn.add_dataset(
     info=dict(
         nominal=DatasetInfo(
             keys=["user_tt_dl_powheg_17"],
-            n_files=421,
+            n_files=100,
             n_events=106724000,
             aux={
                 "lfn_source": "pnfs",
-                "pnfs_version": "v9_v2",
+                "pnfs_version": "v9_v3merged",
                 "pnfs_dataset": "tt_dl_powheg_17",
                 "year": 2017,
                 "replace_nominal": True,
@@ -321,11 +321,11 @@ cpn.add_dataset(
     info=dict(
         nominal=DatasetInfo(
             keys=["user_tt_fh_powheg_17"],
-            n_files=987,
-            n_events=235215999,
+            n_files=100,
+            n_events=233640999,
             aux={
                 "lfn_source": "pnfs",
-                "pnfs_version": "v9_v2",
+                "pnfs_version": "v9_v3merged",
                 "pnfs_dataset": "tt_fh_powheg_17",
                 "year": 2017,
                 "replace_nominal": True,
