@@ -48,7 +48,7 @@ cpn.add_dataset(
     is_data=True,
     processes=[procs.data_jetht],
     keys=[
-        "/JetHT/Run2018C-UL2018_NanoAODv15-v1/NANOAOD",
+        "/JetHT/Run2018C-UL2018_NanoAODv15-v2/NANOAOD",
     ],
     n_files=72,
     n_events=70027804,
